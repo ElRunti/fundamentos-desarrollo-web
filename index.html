@@ -7,7 +7,7 @@
   <title>Mi blog</title>
 </head>
 <body>
-  <header>
+  <header id="mi-clase">
   <nav>
     <a href="#inicio">Inicio</a>
     <a href="#sobre-mi">Acerca de</a>
@@ -15,26 +15,31 @@
   </nav>
 </header>
 <br><br>
+<h2>Bienvenidos a mi blog</h2>
 <main id="inicio">
+    <div class="card">
   <section>
     <article>
-      <h2>Bienvenidos a mi blog</h2>
-      <p>Mi nombre es Ruben Nuñez Almanza <strong>alumni</strong> de DevF</p>
+      <p class="resaltado">Mi nombre es Ruben Nuñez Almanza <strong>alumni</strong> de DevF</p>
     </article>
     <img src="src/img/perfilRubenimg.png" alt="Fotografia del alumni Ruben Nuñez Almanza" width="300">
 </section>
+</div>
 </main>
 <div id="sobre-mi">
-<p>Me encanta la programacion al igual que la produccion musical y soy fan de los videojuegos de guerra , si alguien quiere regalarme algo lo acepto</p>
+<p id="parrafo-sobre-mi">Me encanta la programacion al igual que la produccion musical y soy fan de los videojuegos de guerra , si alguien quiere regalarme algo lo acepto.</p>
 <br>
-<p>Mis gustos</p> 
+<div class="card">
+<h3 class="resaltado">Mis gustos</h3> 
 <ul>
-  <li>Programar</li>
+  <li id="mi-id">Programar</li>
   <li>Musica</li>
   <li>Bailar</li>
   <li>Jugar videojugos</li>
   <li>Saber cosas nuevas</li>
 </ul>
+</div>
+<div class="card">
 <p>Mis redes sociales son:</p>
 <ol>
   <li><span>📷</span> <a href="//www.instagram.com/rubeennu/">rubeennu</a></li>
@@ -47,19 +52,54 @@
 
 </div>
 <fieldset>
-  <legend>Ficha de contacto</legend>
-<fo action="#" method="post">
-<h2>Contactame</h2>
-<label for="nombre">Nombre:</label>
-<input type="text" id="nombre" name="nombre" required><br>
-<label for="email">Correo electronico</label><br>
-<input type="email" id="email" name="email" required><br>
-<label for="mensaje">Mensaje</label><br>
-<textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
-<button>Enviar</button>
-
-</form>
+    <legend>Ficha de contacto</legend>
+    <form action="#" method="post">
+    <h2>Contactame</h2>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br>
+    <label for="email">Correo electronico</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <label for="mensaje">Mensaje</label><br>
+    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+    <button>Enviar</button>
+    </form>
 </fieldset>
+
+ <!-- Sección de ejemplos de display
+    <section id="ejemplos-display">
+        <h2>Ejemplos de display</h2>
+
+        <h3>display: block</h3>
+        <p>Las cajas block ocupan todo el ancho disponible y se colocan una debajo de la otra:</p>
+        <div class="caja caja-block">Caja BLOCK 1</div>
+        <div class="caja caja-block">Caja BLOCK 2</div>
+
+        <h3>display: inline</h3>
+        <p>Las cajas inline se comportan como texto: se ponen una junto a la otra y no respetan width/height:</p>
+        <p>
+            Texto normal
+            <span class="caja caja-inline">INLINE 1</span>
+            más texto
+            <span class="caja caja-inline">INLINE 2</span>
+            y más texto
+            <span class="caja caja-inline">INLINE 3</span>
+        </p>
+
+        <h3>display: inline-block</h3>
+        <p>Las cajas inline-block se alinean una junto a otra, pero sí respetan width y height:</p>
+        <div class="contenedor-inline-block">
+            <div class="caja caja-inline-block">INLINE-BLOCK 1</div>
+            <div class="caja caja-inline-block">INLINE-BLOCK 2</div>
+            <div class="caja caja-inline-block">INLINE-BLOCK 3</div>
+        </div>
+    </section>
+    <section id="box-model-demo">
+        <h2>Demo Box Model</h2>
+        <div class="box-demo">
+            Soy una caja de ejemplo
+        </div>
+    </section> -->
+
 <footer>
   <p>℗ Todos los derechos reservados </p>
 </footer>
