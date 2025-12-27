@@ -1,13 +1,17 @@
 # Aprendizajes del modulo fundamentos del desarrollo web
-En el proyecto **Propiedades básicas de CSS** se siguio desarrollando la pagina base con lo modificado en el commit anterior, agregando lo visto en las lecturas en DEV.F y en las sesiones con el sensei.
+En este tercer proyecto de **Herencia en CSS** trabaje con conceptos clave de estilos los cuales se vieron en la clase del sensei y en lecturas de campus
 
 
 En este proyecto se implemento:
-* Uso de **tipografia y colores** con `font-family`, `color` y `background-color`. * Aplicacion del **Box Model**: `margin`, `padding`, `border`, `border-radius` y `box-sizing`.
-* Creacion de 3 tarejetas sin flex con css `.card`. (Tarea del notion del sensei)
-* Ejemplos de `Display` (`block`,`inline`,`inline-block`).
-*  **Uso de pseudo-clases** como `:hover`.
-* Uso general con `*` de  `box-sizing: border-box;` para diseño responsivo.
+*  Uso de  **Google Fonts** para personalizar la tipografia, tomando en cuenta las buenas practicas se agregaron 3 tipos de fuente nativas.
+
+* Aplicacion de **herencia, cascada y espeficidad** eb `CSS`.
+* Creacion de tarjetas (`card` y `card-grup`) con `border`, `padding`, `shadow`y mas atributos.
+* Uso de **position: relative, absolute, sticky y fixed** para navegacion fija. 
+* Se uso **inline-block** y **box model**.
+* Estilizacion de enlaces y botones con **hover effects**
+* Practique la diferencia entre `block`, `inline-block` y `inline-table`, asi como el uso de `!important`.
 
 ****
-**Nota**: Las partes de codigo comentado tanto en `Index.html` y la hoja de estilos `CSS `, son ejemplos que se vieron en la clase del sensei y los anexe como evidencia de la clase y para un uso futuro.
+
+Nota: Se borro las partes de codigo comentado para no saturar de codigo inecesario, los ejemplos quedaron en commits anteriores y unicamente se dejo lo que tiene ve ver con el tema de herencia y lo visto en la clase del sensei.
