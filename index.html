@@ -8,65 +8,106 @@
   <title>Mi blog</title>
 </head>
 <body>
-  <header id="mi-clase">
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#sobre-mi">Acerca de</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-</header>
-<br><br>
-<h2>Bienvenidos a mi blog</h2>
-<main id="inicio">
-    <div class="card">
-  <section>
-    <article>
-      <p class="resaltado">Mi nombre es Ruben Nuñez Almanza <strong>alumni</strong> de DevF</p>
-    </article>
-    <img src="src/img/perfilRubenimg.png" alt="Fotografia del alumni Ruben Nuñez Almanza" width="300">
-    <button class="overlay-btn">Contactame</button>
-</section>
-</div>
-</main>
-<div id="sobre-mi">
-<p id="parrafo-sobre-mi">Me encanta la programacion al igual que la produccion musical y soy fan de los videojuegos de guerra , si alguien quiere regalarme algo lo acepto.</p>
-<br>
-</div>
-<div class="card-group">
-<h3 class="resaltado">Mis gustos</h3> 
-<ul>
-  <li id="mi-id">Programar</li>
-  <li>Musica</li>
-  <li>Bailar</li>
-  <li>Jugar videojugos</li>
-  <li>Saber cosas nuevas</li>
-</ul>
-</div>
-<div class="card-group">
-<p>Mis redes sociales son:</p>
-<ol>
-  <li><span id="mi-gusto">📷</span> <a href="//www.instagram.com/rubeennu/">rubeennu</a></li>
-  <li><span>🎶</span>Spotify: <a href="https://open.spotify.com/intl-es/artist/0uS52mSvdSTYlgZIBUOg4a">El Runti</a></li>
-  <li><span>💻</span>GitHub: <a href="https://github.com/ElRunti">ElRunti</a></li>
-</ol>
-</div>
-<div id="contactame">
-</div>
-<fieldset>
-    <legend>Ficha de contacto</legend>
-    <form action="#" method="post">
-    <h2>Contactame</h2>
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required><br>
-    <label for="email">Correo electronico</label><br>
-    <input type="email" id="email" name="email" required><br>
-    <label for="mensaje">Mensaje</label><br>
-    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
-    <button>Enviar</button>
-    </form>
-</fieldset>
-<footer>
-  <p>℗ Todos los derechos reservados </p>
-</footer>
-</body>
+    <header>
+        <nav class="navbar">
+            <a href="#inicio">Inicio</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Full Stack Developer.<span>Ruben Nuñez Almanza.</span></h1>
+                <p>Construyo aplicaciones web y móviles usando tecnologías modernas como Blazor y .NET MAUI.
+                Me enfoco en crear soluciones funcionales, bien estructuradas y orientadas a resolver problemas reales, 
+                desde sistemas administrativos hasta aplicaciones con bases de datos y lógica de negocio sólida.
+                </p>
+            </div> 
+        </section>
+    </main>
+        <br>
+        <section id="proyectos" class="proyecto">
+            <div class="card-group">
+                <div class="card">
+                    <img src="src/img/proyecto1.png" alt="Proyecto 1" />
+                    <h3>Bitacora de antibioticos web</h3>
+                    <p>Bitacora de registros de antibióticos con operaciones CRUD.</p>
+                    <a href="" class="btn">Ver proyecto</a>
+                </div>
+                <div class="card">
+                    <img src="src/img/proyecto2.png" alt="Proyecto 2" />
+                    <h3>Pagina de El Runti para proyecto en Dev.F</h3>
+                    <p>Describe los proyectos de El Runti como artista independiente.</p>
+                    <a href="" class="btn">Ver proyecto</a>
+                </div>
+            </div>
+        </section>
+        <section class="tecnologias">
+            <h2>Tecnologías que utilizo</h2>
+            <ul>
+                <li>Blazor</li>
+                <li>.NET MAUI</li>
+                <li>C#</li>
+                <li>HTML5 & CSS3</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>SQL Server</li>
+                <li>Entity Framework Core</li>
+                <li>Visual Studio Core & Dev</li>
+                <li>SQL Lite</li>
+            </ul>
+        </section>
+        <section class="acerca-de-mi">
+        <div class="acerca-contenido">
+            <img src="src/img/perfilRubenimg.png" alt="Foto de perfil" />
+            <div class="texto">
+            <h2>Acerca de mí</h2>
+            <p>
+                Soy un desarrollador Full Stack apasionado por crear soluciones tecnológicas que resuelvan problemas reales. 
+                Me especializo en el desarrollo de aplicaciones web y móviles utilizando tecnologías modernas como Blazor y .NET MAUI.
+            </p>
+            <p>
+                Mi enfoque se centra en construir aplicaciones funcionales, bien estructuradas y orientadas a la experiencia del usuario. 
+                Disfruto trabajando en proyectos que van desde sistemas administrativos hasta aplicaciones con bases de datos robustas y lógica de negocio sólida.
+            </p>
+            <div class="trayectoria">
+                <h3>Trayectoria</h3>
+                <ul>
+                <li>Título de programador nivel bachiller</li>
+                <li>Título de TSU en Desarrollo de Software multiplataforma</li>
+                <li>Certificación en Word 2019</li>
+                <li>Certificación en SCRUM</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </section>
+        <section class="redes-sociales">
+            <h2 id="contacto">Redes Sociales</h2>
+            <ol>
+                <li><span id="mi-gusto">📷</span> <a href="//www.instagram.com/rubeennu/">rubeennu</a></li>
+                <li><span>🎶</span>Spotify: <a href="https://open.spotify.com/intl-es/artist/0uS52mSvdSTYlgZIBUOg4a">El Runti</a></li>
+                <li><span>💻</span>GitHub: <a href="https://github.com/ElRunti">ElRunti</a></li>
+            </ol>
+        </section>
+        <section>
+            <fieldset>
+                <legend>Ficha de contacto</legend>
+                <form action="#" method="post">
+                <h2>Contactame</h2>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+                <label for="email">Correo electronico</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="mensaje">Mensaje</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+                <button>Enviar</button>
+                </form>
+            </fieldset>
+        </section>
+        <footer>
+            <p>℗ Hecho por Ruben Nuñez Almanza</p>
+        </footer>
+    </body>
 </html>
