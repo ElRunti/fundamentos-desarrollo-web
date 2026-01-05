@@ -1,11 +1,29 @@
 # Aprendizajes del módulo Fundamentos del Desarrollo Web
- **Proyecto 5 Alineación con Flexbox **
+ **Proyecto 6 Position con CSS **
 
-Se siguio desarrollando la pagina web anterior agregando los nuevos temas vistos, se hizo ligeros cambios debido a que anteriormente ya habia utilizado los recursos de alineacion vertial y horizontal.
+Se siguio desarrollando la pagina web anterior agregando los nuevos temas vistos, como lo es el banner de cookies, el diseño del navbar y footer.
 
 En este proyecto se implementó: 
-  * Uso de `flex-wrap: wrap` para acomodar la lista de *tecnologias* asi como `flex-grow`,`justify-content` y `align-items`para poder darles un mejor diseño.
-  * Se implemento `flex-wrap` en el navbar para uso futuro de mas enlaces y con ello no hacer que se encimen y se pasen a una linea debajo.
+  * Uso de `z-index`para posicionar el navbar y el banner de cookies con el resto de los elementos.
+  * Uso de `gap` para separar los elementos.
+  * Se implemento el `overflow` en en navbar por si el contenido se desborda no se visualice.
+  * Se ajusto el tamaño de la letra en el navbar para mejor visualizacion con `font-size` y la trancision con `transition: 0.3s;`, asi como el uso de un logo.
+  * Se implemento un banner de cookies con `position: fixed` para que aparezca fijo siempre, asi como el uso de `display: flex` y sus atributos.
   
-  ****
-  Nota: El proyecto tuvo muy pocos cambios ya que solo se vio eficiente `flex-wrap` para el disño.
+***
+Parte de CSS implementado en este proyecto:
+
+    
+    z-index: 1000;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    z-index: 2000;
+    gap: 12px;
+
+***
