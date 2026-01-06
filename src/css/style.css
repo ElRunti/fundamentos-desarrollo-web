@@ -14,32 +14,45 @@ body{
 
 }
 .navbar {
-    background-color: #ffffff;
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    z-index: 1000;
-    border-radius: 0 0 10px 10px;
-    display: flex;
-    gap: 20px;
-    overflow: hidden;
+  background-color: #ffffff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav__menu {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end; 
+  flex: 1;                   
 }
 
 .navbar a {
-    color: #353535;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 23px;
+  color: #353535;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 23px;
+  transition: color 0.3s;
 }
-.navbar .logo {
-    height: 50px;
-    display: flex;
+
+.navbar li {
+  list-style: none;
+  display: flex;
+  align-items: center;
 }
+
+#listaimg img {
+  width: 60px;              
+  border-radius: 8px;
+}
+
+
 
 .navbar a:hover {
     color: #D9D9D9;
-    transition: 0.3s;
 }
 
 .hero span {
@@ -263,4 +276,48 @@ body{
 
 .cookie-footer button:hover {
   background-color: #45a049; 
+}
+
+@media (max-width: 600px) {
+  .nav__menu {
+    display: none;
+  }
+
+  .nav__panel {
+    display: none;
+    flex-direction: column;
+    background-color: #ffffff;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    z-index: 1001;
+  }
+
+  .nav__toggle {
+    display: block;
+    margin-left: auto;   
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .nav__panel {
+    display: none;
+  }
+  .nav__toggle {
+    display: none;
+}
+
+
+}
+
+@media (min-width: 1024px) {
+  .nav__panel {
+    display: none;
+  }
+  .nav__toggle {
+    display: none;
+}
 }
